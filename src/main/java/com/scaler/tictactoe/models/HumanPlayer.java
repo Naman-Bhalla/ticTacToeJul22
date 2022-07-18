@@ -1,11 +1,30 @@
 package com.scaler.tictactoe.models;
 
-public class HumanPlayer extends Player {
-    private User user;
+import java.util.Scanner;
 
-    public HumanPlayer(Symbol symbol, User user) {
+public class HumanPlayer extends Player {
+
+    public HumanPlayer(Symbol symbol) {
         super(PlayerType.HUMAN, symbol);
-        this.user = user;
+    }
+
+    @Override
+    public Move makeMove(Board board) {
+        Scanner myObj = new Scanner(System.in);
+
+        System.out.println("Tell Row Number starting from 1");
+        int row = myObj.nextInt();
+
+        System.out.println("Tell Column Number where you want to make the move from 1");
+        int col = myObj.nextInt();
+
+
+        Move move = new Move();
+        move.setCell(board.getCell(row - 1, col - 1));
+        move.setPlayer(this);
+        move.setSymbol(this.getSymbol());
+
+        return move;
     }
 }
 

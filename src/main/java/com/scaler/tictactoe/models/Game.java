@@ -16,6 +16,34 @@ public class Game {
     private GameStatus gameStatus;
     private Player winner;
 
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public List<Move> getMoves() {
+        return moves;
+    }
+
+    public List<GameWinningStrategy> getGameWinningStrategies() {
+        return gameWinningStrategies;
+    }
+
+    public int getLastMovedPlayerIndex() {
+        return lastMovedPlayerIndex;
+    }
+
+    public GameStatus getGameStatus() {
+        return gameStatus;
+    }
+
+    public Player getWinner() {
+        return winner;
+    }
+
     private Game() {
         this.players = new ArrayList<>();
         this.moves = new ArrayList<>();
@@ -23,6 +51,35 @@ public class Game {
         this.lastMovedPlayerIndex = -1;
         this.gameStatus = GameStatus.IN_PROGRESS;
     }
+
+    public void makeMove() {
+        this.lastMovedPlayerIndex += 1;
+        this.lastMovedPlayerIndex %= this.players.size();
+
+        Move move = this.players.get(this.lastMovedPlayerIndex)
+                .makeMove(this.board);
+
+        this.moves.add(move);
+
+        move.getCell().setSymbol(move.getSymbol());
+
+        for (GameWinningStrategy strategy: gameWinningStrategies) {
+            if (strategy.checkIfWon(this.board, this.players.get(lastMovedPlayerIndex), move.getCell())) {
+                gameStatus = GameStatus.ENDED;
+                winner = this.players.get(lastMovedPlayerIndex);
+                return;
+            }
+        }
+
+        if (moves.size() == this.board.getDimension() * this.board.getDimension()) {
+            gameStatus = GameStatus.DRAW;
+            return;
+        }
+    }
+
+    //  A B C D
+    //  0 1 2 3 4
+    //  0
 
     public static Builder create() {
         return new Builder();
@@ -33,6 +90,7 @@ public class Game {
             // Handle Edge Case
             throw new EmptyMovesUndoOperationException();
         }
+
         Move lastMove = this.moves.get(this.moves.size() - 1);
         Cell relevantCell = lastMove.getCell();
         relevantCell.clearCell();
@@ -41,6 +99,16 @@ public class Game {
         this.moves.remove(lastMove);
         return true;
     }
+
+    //  0      1      2     3
+    // [Cell1 Cell2 Cell3 Cell4]
+    //  0      1      2
+    // [Cell1 Cell2 Cell3]
+
+    // 0
+    // [Cell1]
+    // 0 - 1 = -1 % M
+    // (A - B) % M = ((A % M - B %M) + M) % M
 
     public static class Builder {
         private List<Player> players;

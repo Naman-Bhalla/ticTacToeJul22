@@ -17,6 +17,8 @@ public abstract class Player {
     public PlayerType getPlayerType() {
         return playerType;
     }
+
+    public abstract Move makeMove(Board board);
 }
 
 // StartGame

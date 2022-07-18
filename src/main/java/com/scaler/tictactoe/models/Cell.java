@@ -26,6 +26,6 @@ public class Cell {
     }
 
     public void clearCell() {
-        this.symbol = new Symbol(' ');
+        this.symbol = null;
     }
 }

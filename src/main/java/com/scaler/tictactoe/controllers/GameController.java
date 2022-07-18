@@ -1,5 +1,6 @@
 package com.scaler.tictactoe.controllers;
 
+import com.scaler.tictactoe.exceptions.EmptyMovesUndoOperationException;
 import com.scaler.tictactoe.models.*;
 import com.scaler.tictactoe.strategies.gamewinningstrategies.GameWinningStrategy;
 
@@ -18,31 +19,35 @@ public class GameController {
 
         try {
             game = Game.create()
-                    .withBoard(new Board(dimensionOfBoard))
+                    .setDimenston(dimensionOfBoard)
                     .addPlayers(players)
                     .addGameWinningStrategies(strategies)
                     .build();
         } catch (Exception exception) {
             System.out.println("We did something wrong");
+            exception.printStackTrace();
         }
 
         return game;
     }
 
-    public MoveResult makeMove(Game game, Move move) {
-        return MoveResult.Failure;
+    public void makeMove(Game game) {
+        game.makeMove();
     }
 
-    public boolean undo(Game game) {
-//        return game.undo();
-        return false;
+    public boolean undo(Game game) throws EmptyMovesUndoOperationException {
+        return game.undo();
     }
 
     public Player getWinner(Game game) {
-        return null;
+        return game.getWinner();
     }
 
     public GameStatus getGameStatus(Game game) {
-        return GameStatus.IN_PROGRESS;
+        return game.getGameStatus();
+    }
+
+    public void display(Game game) {
+        game.getBoard().printBoard();
     }
 }

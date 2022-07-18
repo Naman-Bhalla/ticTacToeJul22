@@ -5,32 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430bf53d-1c26-4e75-a325-92347f9b87e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/controllers/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/controllers/MoveResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/exceptions/EmptyMovesUndoOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/exceptions/MultipleBotsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/factories/botplayingstrategyfactory/BotPlayingStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Bot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/GameStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/HumanPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/PlayerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Symbol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/botplayingstrategies/BotPlayingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/botplayingstrategies/RandomBotPlayingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/gamewinningstrategies/GameWinningStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/gamewinningstrategies/OrderOneGameWinningStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/GameSimulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/controllers/MoveResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/models/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/gamewinningstrategies/GameWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/gamewinningstrategies/GameWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/gamewinningstrategies/OrderOneGameWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/strategies/gamewinningstrategies/OrderOneGameWinningStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +50,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/namanbhalla/IdeaProjects/ticTacToe/src/main/java/com/scaler/tictactoe/controllers"
+    "last_opened_file_path": "/Users/namanbhalla/IdeaProjects/ticTacToe/src/main/java/com/scaler/tictactoe/controllers",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,8 +65,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.scaler.tictactoe.Main" />
+    <configuration name="GameSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.scaler.tictactoe.GameSimulator" />
       <module name="ticTacToe" />
       <extension name="coverage">
         <pattern>
@@ -89,7 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GameSimulator" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658155515415</updated>
-      <workItem from="1658155517446" duration="7084000" />
+      <workItem from="1658155517446" duration="11932000" />
     </task>
     <servers />
   </component>
@@ -118,5 +109,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/scaler/tictactoe/GameSimulator.java</url>
+          <line>12</line>
+          <properties class="com.scaler.tictactoe.GameSimulator" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
