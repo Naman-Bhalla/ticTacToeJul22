@@ -5,6 +5,11 @@ public class Cell {
     private int column;
     private Symbol symbol;
 
+    public Cell(int row, int column) {
+        this.row = row;
+        this.column = column;
+    }
+    
     public boolean isEmpty() {
         return (symbol == null);
     }
